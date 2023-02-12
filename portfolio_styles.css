@@ -1,0 +1,250 @@
+:root{
+    --primaryColor:#FA0F3D;
+    --secondaryColor:#0081FA;
+    --terciaryColor: #FAE428;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("./img/Textura.jpg") repeat fixed;
+}
+.main_container{
+    width: 100%;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/*NAV-BAR*/
+.nav-bar{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    background: url("./img/down-decorator.png") repeat fixed;
+}
+.nav-logo{
+    width: 45px;
+    height: 50px;
+    margin-left: 12px;
+}
+/*NAV UL*/
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul.nav-menu{
+    margin-right: 12px;
+}
+.nav-bar ul li{
+    padding: 10px;
+}
+.nav-bar ul li a{
+    padding: 2px;
+}
+/*Home*/
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_all_container{
+    display: flex;
+    margin: auto;
+    margin-bottom: 32px;
+    padding: 48px;
+    justify-content: center;
+    align-items: center;
+}
+.home img{
+    width: 300px;
+    margin-right: 48px;
+    border: 8px solid var(--primaryColor);
+    border-radius: 200px;
+}
+.home h1{
+    color: white;
+}
+.home h1 b{
+    color: var(--terciaryColor);
+}
+.line-decorator{
+    width: 100%;
+    margin-top: 8px;
+    height: 36px;
+    background: url("./img/down-decorator.png") repeat fixed;
+}
+/*About*/
+.about{
+    display: flex;
+    background: url("./img/Textura.jpg");
+}
+.about-card{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    margin-top: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.78);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.42);
+}
+.about-text{
+    width: 40%;
+    margin: auto;
+}
+.about-text h2{
+    font-size: 32px;
+    color: var(--primaryColor);
+    margin-bottom: 12px;
+    margin-left: 140px;
+}
+.global-carrousel-container{
+    width: 55%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+.global-carrousel-container h2{
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #FA0F3D;
+}
+.carrousel-skills{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4px;
+    padding-top:8px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.icon-card{
+    display: flex;
+    margin-bottom: 12px;
+    border-radius: 200px;
+    border: solid 3px var(--primaryColor);
+    place-self: center;
+    scroll-snap-align: center;
+    background: url("./img/Textura.jpg") fixed;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.42);
+}
+.icon-card{
+    transition: transform 1s;
+}
+.icon-card:hover{
+    transform: scale(1.07);
+}
+.icon-card img{
+    width: 248px;
+    padding: 32px;
+}
+.icon-card img:last-child{
+    width:200px;
+}
+/*---Services---*/
+.services{
+    display: flex;
+    flex-direction: column;
+    background: url("./img/Textura.jpg");
+    margin-bottom: 24px;
+}
+.services h2{
+    font-size: 36px;
+    font-family:'Quicksand',sans-serif;
+    color: var(--terciaryColor);
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.services-global-container{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 12px;
+}
+.services-card img{
+    width: 50px;
+    margin-bottom: 16px;
+}
+.services-card{
+    width: 416px;
+    height: 186px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 24px;
+    cursor: pointer;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.78);
+}
+.services-card:hover{
+    animation: shake 0.5s 1;
+}
+@keyframes shake{
+    0%{ transform: translate(0);}
+    20%{transform: translate(-2px,2px);}
+    40%{transform: translate(-2px,-2px);}
+    60%{transform: translate(2px,2px);}
+    80%{transform: translate(2px,-2px);}
+    100%{transform: translate(0);}
+}
+/*---Portfolio---*/
+
+/*---MEDIA QUERYS---*/
+@media(max-width:430px){
+    .home_all_container{
+        flex-direction: column;
+    }
+    .home_all_container h1{
+        font-size: 26px;
+        margin-top: 36px;
+    }
+    .about-card{
+        flex-direction: column;
+    }
+    .about-text{
+        width: auto;
+        margin: auto;
+        padding: 20px;
+    }
+    .about-text h2{
+        margin: auto;
+        margin-bottom:16px;
+        margin-left: 63px;
+    }
+    .about img{
+        padding: 20px;
+    }
+    .carrousel-skills{
+        width: 208px;
+        margin: 0;
+    }
+    .icon-card{
+        background: url("./img/Textura.jpg");
+    }
+    .services-global-container{
+        display: grid;
+        grid-row: inherit;
+        padding: 12px;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+    }
+    .services-card{
+        width: 330px;
+        place-self: center;
+        scroll-snap-align: center;   
+    }
+}

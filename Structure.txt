@@ -1,0 +1,30 @@
+Colores:
+	Azul:#0081FA
+	Amarillo: #FAE428
+	Magenta: #FA0F3D
+	Negro
+	Blanco
+nav_bar  || Home About Services Portfolio Contact  <==Aplicar Sticky
+           <div>	
+	Home
+	         °Pantalla de inicio
+		Foto, saludo sencillo con nombre y profesion
+             </div>
+             <div>	
+	About
+	         °Pantalla con descripcion de mis habilidades
+			
+	          	Catalago de las tecnologias que domino y cv	 
+              </div>
+             <div >
+	Services
+	         °Pantalla de con los servicios que ofrezco en mi trabajo
+             </div>	 
+             <div>	
+	Portfolio
+	         °Pantalla con trabajos realizados
+		Incluir link a Git asi como al sitio
+	</div>
+	Contact
+	         °Pantalla con mis redes para contactarme
+		Git,Twitter, Face, Insta, Linkedin
