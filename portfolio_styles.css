@@ -12,7 +12,7 @@
 }
 body{
     font-size: 16px;
-    background: url("./img/Textura.jpg") repeat fixed;
+    background: black;
 }
 .main_container{
     width: 100%;
@@ -83,10 +83,12 @@ ul{
     height: 36px;
     background: url("./img/down-decorator.png") repeat fixed;
 }
+.line-decorator img{
+    height: 0px;
+}
 /*About*/
 .about{
     display: flex;
-    background: url("./img/Textura.jpg");
 }
 .about-card{
     display: flex;
@@ -138,7 +140,7 @@ ul{
     border: solid 3px var(--primaryColor);
     place-self: center;
     scroll-snap-align: center;
-    background: url("./img/Textura.jpg") fixed;
+    background: radial-gradient(#FA1200,black);
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.42);
 }
 .icon-card{
@@ -158,12 +160,11 @@ ul{
 .services{
     display: flex;
     flex-direction: column;
-    background: url("./img/Textura.jpg");
     margin-bottom: 24px;
 }
 .services h2{
     font-size: 36px;
-    font-family:'Quicksand',sans-serif;
+    font-weight: 300;
     color: var(--terciaryColor);
     margin: auto;
     margin-top: 40px;
@@ -232,9 +233,6 @@ ul{
         width: 208px;
         margin: 0;
     }
-    .icon-card{
-        background: url("./img/Textura.jpg");
-    }
     .services-global-container{
         display: grid;
         grid-row: inherit;
@@ -244,7 +242,8 @@ ul{
         scroll-snap-type: x proximity;
     }
     .services-card{
-        width: 330px;
+        width: 200px;
+        height: 260px;
         place-self: center;
         scroll-snap-align: center;   
     }
