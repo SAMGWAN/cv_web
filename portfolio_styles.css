@@ -34,9 +34,12 @@ ul{
     background: url("./img/down-decorator.png") repeat fixed;
 }
 .nav-logo{
-    width: 45px;
+    width: 50px;
     height: 50px;
     margin-left: 12px;
+    background-color: black;
+    border-radius: 87px;
+    border: red solid 3px;
 }
 /*NAV UL*/
 .nav-bar ul{
@@ -211,10 +214,11 @@ ul{
     margin-bottom: 20px;
 }
 .global-card-portfolio-container{
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     margin: auto;
+    border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.78);
 }
 .portfolio-text{
@@ -233,13 +237,20 @@ ul{
 @media(max-width:430px){
     .home_all_container{
         flex-direction: column;
+        padding-bottom: 0;
+        padding-top: 20px;
     }
     .home_all_container h1{
         font-size: 26px;
         margin-top: 36px;
     }
+    .home img{
+        margin-right:0;
+    }
     .about-card{
         flex-direction: column;
+        padding-bottom: 16px;
+        padding-top: 8px;
     }
     .about-text{
         width: auto;
@@ -258,6 +269,13 @@ ul{
         width: 208px;
         margin: 0;
     }
+    .global-carrousel-container{
+        width: 62%;
+    }
+    .global-carrousel-container h2{
+        margin-top: 0;
+        margin-bottom: 4px;
+    }
     .services-global-container{
         display: grid;
         grid-row: inherit;
@@ -266,9 +284,13 @@ ul{
         overscroll-behavior-x: contain;
         scroll-snap-type: x proximity;
     }
+    .services h2{
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
     .services-card{
-        width: 200px;
-        height: 260px;
+        width: 212px;
+        height: 236px;
         place-self: center;
         scroll-snap-align: center;   
     }
